@@ -1,0 +1,58 @@
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+#plateau {
+    display: flex;
+    flex-flow: column nowrap;
+
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+}
+.rows {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+}
+.cards {
+    min-height: 70px;
+    min-width: 50px;
+    background-image: url('cartes/cardback.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: solid black 1px;
+    border-radius: 5px;
+    display: table;
+}
+
+#containerTours {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+#containerTours > div{
+    display: block;
+    text-align: center;
+}
+
+#pointsJ1 {
+    color: red;
+}
+
+#pointsJ2 {
+    color: blue;
+}
+#tourDeQui {
+    color: red;
+}
+
+#replay {
+    display: none;
+}
